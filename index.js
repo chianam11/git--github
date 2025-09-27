@@ -1,6 +1,8 @@
 
-const handleIncrease = () => {
-    console.log("current index:", index);
+const handleCount = () => {
+
+    let index = 0
+    console.log(index);
 
     return function () {
         return index++;
@@ -8,14 +10,5 @@ const handleIncrease = () => {
 
 
 }
-const handleDecrease = () => {
-    console.log(index);
-
-}
-var index = 0
-const ab = handleIncrease()
-
-console.log(ab());
-console.log(ab());
-handleDecrease();
-
+handleCount();
+handleCount();
